@@ -126,7 +126,8 @@ img {
 /* Button */
 .button.primary {
   display: flex;
-  border: 1px solid transparent;
+  border: none;
+  outline: none;
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 200px;
@@ -147,8 +148,8 @@ img {
 .button.secondary {
   color: var(--primary-text-color);
   background-color: var(--secondary-bg-color);
-  border: 1px solid transparent;
-  border-color: transparent;
+  border: none;
+  outline: none;
 
   font-weight: 500;
   font-size: 16px;
@@ -275,20 +276,26 @@ img {
   padding: 200px 452px;
   flex-wrap: wrap;
   justify-content: center;
-  width: 1200px;
+  align-items: center;
+}
 
+.hero {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/hero/bg-hero.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   /* background-size: 1600px 600px; */
   background-position: center;
   background-color: #2f303a;
 }
 
-.hero .hero-title {
+.hero .hero-text {
   color: var(--primary-white-color);
 
   font-weight: 900;
@@ -508,9 +515,12 @@ img {
 }
 
 /* Footer */
-/* .footer {
-  
-} */
+.footer {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #2f303a;
+}
 
 .footer .container {
   display: flex;
@@ -518,7 +528,6 @@ img {
   align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: #2f303a;
 }
 
 .footer-address-list {
@@ -526,9 +535,10 @@ img {
   flex-direction: column;
 }
 
-/* .contacts .logo {
+.contacts .logo {
+  display: block;
   margin-bottom: 20px;
-} */
+}
 
 .footer-address-item:not(:last-child) {
   margin-bottom: 9px;
@@ -543,9 +553,9 @@ img {
   color: var(--accent-color);
 }
 
-.footer-address {
+/* .footer-address {
   margin-top: 20px;
-}
+} */
 
 .footer-address a {
   text-decoration: none;

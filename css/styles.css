@@ -508,14 +508,17 @@ img {
 }
 
 /* Footer */
-.footer {
-  background-color: #2f303a;
-}
+/* .footer {
+  
+} */
 
 .footer .container {
   display: flex;
   justify-content: start;
   align-items: baseline;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
 }
 
 .footer-address-list {
@@ -532,8 +535,6 @@ img {
 }
 
 .footer .contacts {
-  padding-top: 60px;
-  padding-bottom: 60px;
   margin-right: 70px;
 }
 
